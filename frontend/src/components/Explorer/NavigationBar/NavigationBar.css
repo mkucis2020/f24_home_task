@@ -1,0 +1,51 @@
+.navigation-container {
+    background-color: #efefef;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 10px 0px 0px;
+    white-space: nowrap;
+}
+
+.navigation-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.navigation-button:hover {
+    background-color: #dddddd;
+}
+
+.navigation-path-container {
+    background-color: #fafafa;
+    padding: 2px;
+    flex-basis: 100%;
+    border: 1px solid #979797;
+    border-radius: 4px;
+}
+
+.navigation-path-container > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    height: 100%;
+    align-items: center;
+}
+
+.navigation-path-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+}
+
+.navigation-path-item:hover {
+    background-color: #efefef;
+}

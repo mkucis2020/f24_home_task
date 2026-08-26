@@ -1,0 +1,77 @@
+.treeview-container {
+    flex-grow: 1;
+    border: 1px solid #b2b2b2;
+    min-height: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.treeview-container > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    height: 100%;
+    align-items: center;
+}
+
+.treeview-header {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.treeview-body {
+    overflow-y: scroll;
+    min-height: 0px;
+    flex-grow: 1;
+    position: relative;
+}
+
+.treeview-row {
+    display: grid;
+    grid-template-columns: 40px 2fr 1fr 1fr 1fr;
+    gap: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+.treeview-row > div
+{
+    white-space: nowrap;       /* 1. Prevents text from wrapping to a new line */
+    overflow: hidden;          /* 2. Hides the text that overflows the cell width */
+    text-overflow: ellipsis;
+}
+
+.treeview-row:not(.selected):hover {
+    background-color: #dddddd;
+}
+
+.treeview-row.selected:hover {
+    background-color: #babafd;
+}
+
+.center-contents {
+    display: flex;
+    flex-direction: row;
+}
+
+.center-contents span {
+    margin-left: 10px;
+}
+
+.search-result {
+    background-color: #fbfbc3;
+}
+
+.selected {
+    background-color: #cacafa;
+}
+
+.checkRow > input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
