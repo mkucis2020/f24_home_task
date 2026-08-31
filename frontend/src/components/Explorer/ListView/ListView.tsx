@@ -49,8 +49,8 @@ function ListView() {
 
     return (
         <>
-            <div className='treeview-container'>
-                <div className="treeview-header treeview-row">
+            <div className='listview-container'>
+                <div className="listview-header listview-row">
                     <div></div>
                     <div>Name</div>
                     <div>Type</div>
@@ -60,12 +60,12 @@ function ListView() {
                 
                 {isLoading && <Spinner />}
 
-                <div className="treeview-body">
+                <div className="listview-body">
                     {items?.map((item) => {
                         let isSelected = selectedItems.some(items => items.id === item.id)
                         
                         return (
-                            <div key={item.id} className={`treeview-row ${item.id === selectedSearchItemId ? 'search-result' : ''} ${isSelected ? 'selected' : ''}`} 
+                            <div key={item.id} className={`listview-row ${item.id === selectedSearchItemId ? 'search-result' : ''} ${isSelected ? 'selected' : ''}`} 
                                 onClick={() => handleRowClick(item)} ref={item.id === selectedSearchItemId ? targetRowRef : null}>
 
                                 <div className="checkRow"><input type="checkbox" checked={isSelected} onClick={handleCheckboxClick}

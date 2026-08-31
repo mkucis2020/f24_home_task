@@ -2,11 +2,11 @@
 
 
 
-Copy the contents of this repository in a folder on disk. Then run the commands bellow to start the docker application.
+Copy the contents of this repository in a folder on disk. 
 
 
 
-Application is running inside docker containers, run commands below to start each container.
+Application is running inside docker containers, run commands bellow to start each container.
 
 
 
